@@ -1,0 +1,102 @@
+time=2024-10-19T18:26:59.505+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T18:28:20.037+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T18:28:20.037+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T18:32:30.425+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T18:36:08.861+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T18:36:08.861+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T18:53:05.715+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T18:56:50.775+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T18:56:50.776+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T18:56:53.921+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T18:57:47.582+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T18:57:47.582+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T18:57:50.560+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:00:27.636+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:00:27.636+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:00:31.397+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:04:19.697+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:04:19.697+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:04:24.394+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:07:20.775+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:07:20.775+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:07:36.841+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:32:14.983+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:32:14.983+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:32:17.553+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:33:35.006+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:33:35.006+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:33:38.670+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:35:22.219+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:35:22.219+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:37:57.424+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:52:25.596+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:52:25.596+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:52:30.516+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:53:45.499+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:53:45.499+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:53:48.619+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T19:58:43.773+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T19:58:43.773+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T19:58:46.510+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T20:03:10.736+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T20:03:10.736+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-19T20:03:16.658+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-19T20:05:21.350+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-19T20:05:21.350+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T12:23:20.752+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T12:26:33.914+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T12:26:33.914+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T12:30:49.964+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T12:39:08.083+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T12:39:08.083+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T12:39:11.932+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T12:51:33.072+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T12:51:33.072+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T12:51:36.392+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T13:02:55.140+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T13:02:55.140+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T13:02:59.668+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T13:05:07.601+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T13:05:07.601+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T13:09:04.462+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T13:10:57.803+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T13:10:57.803+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T13:11:00.892+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T13:13:48.810+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T13:13:48.810+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T13:14:06.682+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T14:14:59.395+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T14:14:59.395+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T14:50:04.651+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T15:00:21.592+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T15:00:21.592+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T15:00:26.880+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T16:28:12.160+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T16:28:12.161+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T17:05:42.042+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T17:06:20.273+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T17:06:20.273+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T17:06:23.185+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T17:07:41.359+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T17:07:41.359+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T17:07:51.511+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T17:28:09.784+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T17:28:09.784+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T17:35:54.000+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T17:38:31.517+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T17:38:31.517+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-21T17:38:37.711+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-21T17:59:13.955+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-21T17:59:13.956+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-22T12:24:53.715+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-22T12:31:28.136+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-22T12:31:28.136+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-22T12:31:31.993+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-22T12:32:51.895+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-22T12:32:51.895+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-22T12:32:54.369+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-22T12:33:14.703+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-22T12:33:14.703+05:00 level=INFO msg="Shutdown completed"
+time=2024-10-22T12:36:10.870+05:00 level=INFO msg="Listening and serving" address=localhost:8080
+time=2024-10-22T12:37:03.172+05:00 level=INFO msg="Shutdown signal received"
+time=2024-10-22T12:37:03.172+05:00 level=INFO msg="Shutdown completed"

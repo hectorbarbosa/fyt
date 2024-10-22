@@ -1,0 +1,8 @@
+logger-config:
+  logging-level: -4
+server-config:
+  server-url: "localhost:8080"
+postgres-config:
+  postgres-url: "postgres://postgres:postgres@localhost:5432/fyt"
+manticore-config: 
+  manticore-url: "http://localhost:9308"
