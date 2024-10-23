@@ -20,7 +20,7 @@ migratedown:
 
 .PHONY: sqlc 
 sqlc:
-	internal/storage/postgresql/sqlc generate 
+	sqlc generate 
 
 .PHONY: build
 build:

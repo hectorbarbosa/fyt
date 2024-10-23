@@ -22,42 +22,19 @@ type ProjectRepository interface {
 type ProjectSearchRepository interface {
 	Delete(ctx context.Context, id int64) error
 	Index(ctx context.Context, p models.Project) error
-	// Search(
-	// 	ctx context.Context,
-	// 	name *string,
-	// 	description *string,
-	// ) ([]models.Project, error)
 }
 
-// ProjectService defines the application service in charge of interacting with Tasks.
+// ProjectService
 type ProjectService struct {
 	repo ProjectRepository
-	// search ProjectSearchRepository
 }
 
 // NewProjectService
 func NewProjectService(repo ProjectRepository) *ProjectService {
 	return &ProjectService{
 		repo: repo,
-		// search: search,
 	}
 }
-
-// Search gets all existing Project from the datastore.
-// func (s *ProjectService) Search(
-// 	ctx context.Context,
-// 	name string,
-// 	description string,
-// 	releaseYear uint16,
-// 	rating float32,
-// ) ([]models.Project, error) {
-// 	films, err := s.search.Search(ctx, &name, &description)
-// 	if err != nil {
-// 		return nil, fmt.Errorf("search: %w", err)
-// 	}
-
-// 	return films, nil
-// }
 
 // Create stores a new record.
 func (s *ProjectService) Create(
@@ -73,8 +50,6 @@ func (s *ProjectService) Create(
 		return models.Project{}, fmt.Errorf("repo create: %w", err)
 	}
 
-	// _ = s.search.Index(ctx, film) // Ignoring errors on purpose
-
 	return project, nil
 }
 
@@ -89,8 +64,6 @@ func (s *ProjectService) Delete(ctx context.Context, id string) error {
 		return fmt.Errorf("svc delete: %w", err)
 	}
 
-	// _ = s.search.Delete(ctx, id) // Ignoring errors on purpose
-
 	return nil
 }
 
@@ -101,12 +74,12 @@ func (s *ProjectService) Find(id string) (models.Project, error) {
 		return models.Project{}, fmt.Errorf("svc delete: %w", err)
 	}
 
-	task, err := s.repo.Find(int64(iD))
+	project, err := s.repo.Find(int64(iD))
 	if err != nil {
 		return models.Project{}, fmt.Errorf("repo find: %w", err)
 	}
 
-	return task, nil
+	return project, nil
 }
 
 // Update updates an existing Project in the datastore.
@@ -115,10 +88,6 @@ func (s *ProjectService) Update(
 	id string,
 	p api_models.UpdateProject,
 ) error {
-	if err := p.Validate(); err != nil {
-		return internal.WrapErrorf(err, internal.ErrorCodeInvalidArgument, "validate project")
-	}
-
 	if err := p.Validate(); err != nil {
 		return internal.WrapErrorf(err, internal.ErrorCodeInvalidArgument, "validate project")
 	}
@@ -132,9 +101,5 @@ func (s *ProjectService) Update(
 		return fmt.Errorf("repo update: %w", err)
 	}
 
-	// _, err := s.repo.Find(id)
-	// if err == nil {
-	// 	// _ = s.search.Index(ctx, film) // Ignoring errors on purpose
-	// }
 	return nil
 }

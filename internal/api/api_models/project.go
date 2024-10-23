@@ -8,6 +8,7 @@ import (
 )
 
 type CreateProject struct {
+	Owner       int32    `json:"owner" validate:"required"`
 	ProjectType int32    `json:"project_type" validate:"required"`
 	Title       string   `json:"title" validate:"required,min=2,max=150"`
 	Description string   `json:"description" validate:"required,min=5,max=500"`

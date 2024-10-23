@@ -28,6 +28,7 @@ func (q *Queries) DeleteProject(ctx context.Context, id int64) (int64, error) {
 
 const InsertProject = `-- name: InsertProject :one
 INSERT INTO projects (
+  owner,
   project_type,
   title,
   description,
@@ -38,13 +39,15 @@ VALUES (
   $1,
   $2,
   $3,
-  $4, 
-  $5
+  $4,
+  $5, 
+  $6
 )
 RETURNING id, created_at, updated_at
 `
 
 type InsertProjectParams struct {
+	Owner       int32
 	ProjectType int32
 	Title       string
 	Description string
@@ -60,6 +63,7 @@ type InsertProjectRow struct {
 
 func (q *Queries) InsertProject(ctx context.Context, arg InsertProjectParams) (InsertProjectRow, error) {
 	row := q.db.QueryRow(ctx, InsertProject,
+		arg.Owner,
 		arg.ProjectType,
 		arg.Title,
 		arg.Description,
@@ -74,6 +78,7 @@ func (q *Queries) InsertProject(ctx context.Context, arg InsertProjectParams) (I
 const SelectProject = `-- name: SelectProject :one
 SELECT
   id,
+  owner,
   project_type,
   title,
   description,
@@ -95,6 +100,7 @@ func (q *Queries) SelectProject(ctx context.Context, id int64) (Projects, error)
 	var i Projects
 	err := row.Scan(
 		&i.ID,
+		&i.Owner,
 		&i.ProjectType,
 		&i.Title,
 		&i.Description,
@@ -115,7 +121,8 @@ UPDATE projects SET
   description  = $3,
   social_url   = $4,
   source_url   = $5,
-  closed       = $6
+  closed       = $6,
+  updated_at   = NOW()
 WHERE id = $7
 RETURNING id AS res
 `

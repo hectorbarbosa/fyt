@@ -1,6 +1,7 @@
 -- name: SelectProject :one
 SELECT
   id,
+  owner,
   project_type,
   title,
   description,
@@ -18,6 +19,7 @@ LIMIT 1;
 
 -- name: InsertProject :one
 INSERT INTO projects (
+  owner,
   project_type,
   title,
   description,
@@ -25,6 +27,7 @@ INSERT INTO projects (
   source_url 
 )
 VALUES (
+  @owner,
   @project_type,
   @title,
   @description,
@@ -40,7 +43,8 @@ UPDATE projects SET
   description  = @description,
   social_url   = @social_url,
   source_url   = @source_url,
-  closed       = @closed
+  closed       = @closed,
+  updated_at   = NOW()
 WHERE id = @id
 RETURNING id AS res;
 

@@ -10,6 +10,7 @@ import (
 
 type Projects struct {
 	ID          int64
+	Owner       int32
 	ProjectType int32
 	Title       string
 	Description string
@@ -19,4 +20,12 @@ type Projects struct {
 	SourceUrl   pgtype.Text
 	Closed      pgtype.Bool
 	ClosedAt    pgtype.Timestamptz
+}
+
+type Users struct {
+	ID        int32
+	Email     string
+	UserName  string
+	Password  string
+	CreatedAt pgtype.Timestamptz
 }

@@ -13,7 +13,7 @@ import (
 	"github.com/jackc/pgx/v5"
 )
 
-// ProjectRepositary represents the repository used for interacting with projects records.
+// ProjectRepository represents the repository used for interacting with projects records.
 type ProjectRepository struct {
 	q *db.Queries
 }
@@ -30,6 +30,7 @@ func NewProjectRepo(d db.DBTX) *ProjectRepository {
 // Create inserts a new record in db.
 func (r *ProjectRepository) Create(p api_models.CreateProject) (models.Project, error) {
 	row, err := r.q.InsertProject(context.Background(), db.InsertProjectParams{
+		Owner:       int32(p.Owner),
 		ProjectType: int32(p.ProjectType),
 		Title:       p.Title,
 		Description: p.Description,
@@ -42,6 +43,7 @@ func (r *ProjectRepository) Create(p api_models.CreateProject) (models.Project, 
 
 	return models.Project{
 		Id:          row.ID,
+		Owner:       p.Owner,
 		ProjectType: models.ProjectType(p.ProjectType),
 		Title:       p.Title,
 		Description: p.Description,
@@ -79,6 +81,7 @@ func (r *ProjectRepository) Find(id int64) (models.Project, error) {
 
 	return models.Project{
 		Id:          project.ID,
+		Owner:       project.Owner,
 		ProjectType: models.ProjectType(project.ProjectType),
 		Title:       project.Title,
 		Description: project.Description,
@@ -110,7 +113,7 @@ func (r *ProjectRepository) Update(id int64, p api_models.UpdateProject) error {
 	}
 
 	if result == 0 {
-		return internal.WrapErrorf(err, internal.ErrorCodeNotFound, "delete project")
+		return internal.WrapErrorf(err, internal.ErrorCodeNotFound, "update project")
 	}
 
 	return nil

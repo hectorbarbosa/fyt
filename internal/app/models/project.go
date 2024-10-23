@@ -18,6 +18,7 @@ const (
 
 type Project struct {
 	Id          int64
+	Owner       int32
 	ProjectType ProjectType
 	Title       string
 	Description string
