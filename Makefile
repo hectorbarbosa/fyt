@@ -12,11 +12,11 @@ dropdb:
 
 # Create Docker container `fyt` tables
 migrateup:
-	migrate -path db/migrations/ -database postgres://postgres:111@localhost:5432/fyt?sslmode=disable up
+	migrate -path db/migrations/ -database postgres://postgres:postgres@localhost:5432/fyt?sslmode=disable up
 
 # Drop Docker container `fyt` tables
 migratedown:
-	migrate -path db/migrations/ -database postgres://postgres:111@localhost:5432/fyt?sslmode=disable down 
+	migrate -path db/migrations/ -database postgres://postgres:postgres@localhost:5432/fyt?sslmode=disable down 
 
 .PHONY: sqlc 
 sqlc:
