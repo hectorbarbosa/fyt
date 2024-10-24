@@ -138,8 +138,12 @@ func newServer(cfg *config.Config, db *pgxpool.Pool, mws ...mux.MiddlewareFunc) 
 	repoUsers := postgresql.NewUserRepo(db)       // Project Repository
 	svcUsers := service.NewUserService(repoUsers) // Project Service
 
+	repoTasks := postgresql.NewTaskRepo(db)       // Task Repository
+	svcTasks := service.NewTaskService(repoTasks) // Task Service
+
 	api.NewProjectHandler(svcProjects).Register(r)
 	api.NewUserHandler(svcUsers).Register(r)
+	api.NewTaskHandler(svcTasks).Register(r)
 
 	address := cfg.Server.ServerURL
 

@@ -43,7 +43,7 @@ VALUES (
   $5, 
   $6
 )
-RETURNING id, created_at, updated_at
+RETURNING id, created_at
 `
 
 type InsertProjectParams struct {
@@ -58,7 +58,6 @@ type InsertProjectParams struct {
 type InsertProjectRow struct {
 	ID        int64
 	CreatedAt pgtype.Timestamptz
-	UpdatedAt pgtype.Timestamptz
 }
 
 func (q *Queries) InsertProject(ctx context.Context, arg InsertProjectParams) (InsertProjectRow, error) {
@@ -71,7 +70,7 @@ func (q *Queries) InsertProject(ctx context.Context, arg InsertProjectParams) (I
 		arg.SourceUrl,
 	)
 	var i InsertProjectRow
-	err := row.Scan(&i.ID, &i.CreatedAt, &i.UpdatedAt)
+	err := row.Scan(&i.ID, &i.CreatedAt)
 	return i, err
 }
 

@@ -20,3 +20,14 @@ CREATE TABLE IF NOT EXISTS public.projects (
     closed_at TIMESTAMPTZ
 );
 
+CREATE TABLE IF NOT EXISTS public.tasks (
+    id BIGSERIAL PRIMARY KEY, 
+    project_id BIGINT REFERENCES public.projects(id) NOT NULL, 
+    title VARCHAR(50) NOT NULL,
+    description VARCHAR NOT NULL,
+    due_date TIMESTAMPTZ NOT NULL,
+    doer INT REFERENCES public.users(id),
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW(),
+    done BOOLEAN
+);

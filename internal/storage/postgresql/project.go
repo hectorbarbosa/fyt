@@ -50,7 +50,6 @@ func (r *ProjectRepository) Create(p api_models.CreateProject) (models.Project, 
 		SocialUrl:   p.SocialUrl,
 		SourceUrl:   p.SourceUrl,
 		CreatedAt:   row.CreatedAt.Time,
-		UpdatedAt:   row.UpdatedAt.Time,
 	}, nil
 }
 

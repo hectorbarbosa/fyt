@@ -34,7 +34,7 @@ VALUES (
   @social_url, 
   @source_url
 )
-RETURNING id, created_at, updated_at;
+RETURNING id, created_at;
 
 -- name: UpdateProject :one
 UPDATE projects SET

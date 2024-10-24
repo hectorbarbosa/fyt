@@ -22,6 +22,18 @@ type Projects struct {
 	ClosedAt    pgtype.Timestamptz
 }
 
+type Tasks struct {
+	ID          int64
+	ProjectID   int64
+	Title       string
+	Description string
+	DueDate     pgtype.Timestamptz
+	Doer        pgtype.Int4
+	CreatedAt   pgtype.Timestamptz
+	UpdatedAt   pgtype.Timestamptz
+	Done        pgtype.Bool
+}
+
 type Users struct {
 	ID        int32
 	Email     string
